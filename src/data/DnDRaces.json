@@ -1,0 +1,279 @@
+[
+    {
+        "name": "Dragonborn",
+        "edition": "Base"
+    },
+    {
+        "name": "Dwarf",
+        "edition": "Base"
+    },
+    {
+        "name": "Elf",
+        "edition": "Base"
+    },
+    {
+        "name": "Gnome",
+        "edition": "Base"
+    },
+    {
+        "name": "Half-Elf",
+        "edition": "Base"
+    },
+    {
+        "name": "Halfling",
+        "edition": "Base"
+    },
+    {
+        "name": "Half-Orc",
+        "edition": "Base"
+    },
+    {
+        "name": "Human",
+        "edition": "Base"
+    },
+    {
+        "name": "Tiefling",
+        "edition": "Base"
+    },
+
+    {
+        "name": "Aarakocra",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Aasimar",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Air Genasi",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Bugbear",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Centaur",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Changeling",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Deep Gnome",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Duergar",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Earth Genasi",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Fairy",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Elf",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Firbolg",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Fire Genasi",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Githyanki",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Githzerai",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Goblin",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Goliath",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Harengon",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Hobgoblin",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Kenku",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Kobold",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "LizardFolk",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Minotaur",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Orc",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Sea Elf",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Shadar-kai",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Shifter",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Tabaxi",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Tortle",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Triton",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Water Genasi",
+        "edition": "Monsters of the Multiverse"
+    },
+    {
+        "name": "Kender",
+        "edition": "Dragonlance: Shadow of the Dragon Queen"
+    },
+    {
+        "name": "Astral Elf",
+        "edition": "Spelljammer: Adventures in Space"
+    },
+    {
+        "name": "Autognome",
+        "edition": "Spelljammer: Adventures in Space"
+    },
+    {
+        "name": "Giff",
+        "edition": "Spelljammer: Adventures in Space"
+    },
+    {
+        "name": "Hadozee",
+        "edition": "Spelljammer: Adventures in Space"
+    },
+    {
+        "name": "Plasmoid",
+        "edition": "Spelljammer: Adventures in Space"
+    },
+    {
+        "name": "Thri-kreen",
+        "edition": "Spelljammer: Adventures in Space"
+    },
+    {
+        "name": "Owlin",
+        "edition": "Strixhaven: A Curriculum of Chaos"
+    },
+    {
+        "name": "Lineages",
+        "edition": "Van Richten’s Guide to Ravenloft"
+    },
+    {
+        "name": "Leoin",
+        "edition": "Mythic Odysseys of Theros"
+    },
+    {
+        "name": "Satyr",
+        "edition": "Mythic Odysseys of Theros",
+        "legacy": true
+    },
+    {
+        "name": "Changeling",
+        "edition": "Eberron: Rising from the Last War",
+        "legacy": true
+    },
+    {
+        "name": "Kalashtar",
+        "edition": "Eberron: Rising from the Last War"
+    },
+    {
+        "name": "Shifter",
+        "edition": "Eberron: Rising from the Last War",
+        "legacy": true
+    },
+    {
+        "name": "Warforged",
+        "edition": "Eberron: Rising from the Last War"
+    },
+    {
+        "name": "Verdan",
+        "edition": "Acquisitions Incorporated"
+    },
+    {
+        "name": "Centaur",
+        "edition": "Guildmasters' Guide to Ravnica",
+        "legacy": true
+    },
+    {
+        "name": "Loxodon",
+        "edition": "Guildmasters' Guide to Ravnica"
+    },
+    {
+        "name": "Minotaur",
+        "edition": "Guildmasters' Guide to Ravnica",
+        "legacy": true
+    },
+    {
+        "name": "Simic Hybrid",
+        "edition": "Guildmasters' Guide to Ravnica"
+    },
+    {
+        "name": "Vedalken",
+        "edition": "Guildmasters' Guide to Ravnica"
+    },
+    {
+        "name": "Feral Tiefling",
+        "edition": "Sword Coast Adventurer's Guide"
+    },
+    {
+        "name": "Tortle",
+        "edition": "The Tortle Package",
+        "legacy": true
+    },
+    {
+        "name": "Locathah",
+        "edition": "Locathah Rising"
+    },
+    {
+        "name": "Grung",
+        "edition": "One Grung Above"
+    },
+    {
+        "name": "Gith",
+        "edition": "Mordenkainen’s Tome of Foes",
+        "legacy": true
+    },
+    {
+        "name": "disabled",
+        "edition": "disabled",
+        "disabled": true
+    }
+]

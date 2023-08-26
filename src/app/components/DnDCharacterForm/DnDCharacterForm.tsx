@@ -3,6 +3,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+import { DnDAbilityBox } from '../';
+import DnDRaces from "../../../data/DnDRaces.json";
+import DnDClasses from "../../../data/DnDClasses.json";
+import { DnDAbilities } from '@/types';
+
 export const DnDCharacterForm: React.FC = () => {
     const [dndRace, setDndRace] = useState("Any");
     const [dndClass, setDndClass] = useState("Any");
@@ -11,6 +16,12 @@ export const DnDCharacterForm: React.FC = () => {
     const [dndName, setName] = useState("");
     const [dndBackstory, setBackstory] = useState("");
     const [avatarURL, setAvatar] = useState("");
+    const [strength,        setStrength]    = useState<Number| undefined>();
+    const [dexterity,       setDexterity]    = useState<Number| undefined>();
+    const [constitution,    setConstitution] = useState<Number| undefined>();
+    const [intelligence,    setIntelligence] = useState<Number| undefined>();
+    const [wisdom,          setWisdom]      = useState<Number| undefined>();
+    const [charisma,        setCharisma]    = useState<Number| undefined>();
 
     const handleRaceChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setDndRace(event.target.value);
@@ -54,6 +65,17 @@ export const DnDCharacterForm: React.FC = () => {
           setDndClass(queryResponse.class);
           setLawful(queryResponse.lawfulAlignment);
           setMoral(queryResponse.moralAlignment);
+          setStrength(queryResponse.abilities.strength);
+          setDexterity(queryResponse.abilities.dexterity);
+          setConstitution(queryResponse.abilities.constitution);
+          setIntelligence(queryResponse.abilities.intelligence);
+          setWisdom(queryResponse.abilities.wisdom);
+          setCharisma(queryResponse.abilities.charisma);
+
+
+          console.log(queryResponse.abilities);
+          console.log(queryResponse.abilities.strength);
+          
     }
 
     return (
@@ -68,100 +90,18 @@ export const DnDCharacterForm: React.FC = () => {
                 Race:
                 <select name="race" value={dndRace} onChange={handleRaceChange}>
                     <option>Any</option>
-                    <option>Dragonborn</option>
-                    <option>Dwarf</option>
-                    <option>Elf</option>
-                    <option>Gnome</option>
-                    <option>Half-Elf</option>
-                    <option>Halfling</option>
-                    <option>Half-Orc</option>
-                    <option>Human</option>
-                    <option>Tiefling</option>
-                    <option disabled={true}>---</option>
-                    <option>Aarakocra</option>
-                    <option>Aasimar</option>
-                    <option>Air Genasi</option>
-                    <option>Bugbear</option>
-                    <option>Centaur</option>
-                    <option>Changeling</option>
-                    <option>Deep Gnome</option>
-                    <option>Duergar</option>
-                    <option>Earth Genasi</option>
-                    <option>Fairy</option>
-                    <option>Firbolg</option>
-                    <option>Fire Genasi</option>
-                    <option>Githyanki</option>
-                    <option>Githzerai</option>
-                    <option>Goblin</option>
-                    <option>Goliath</option>
-                    <option>Harengon</option>
-                    <option>Hobgoblin</option>
-                    <option>Kenku</option>
-                    <option>Kobold</option>
-                    <option>LizardFolk</option>
-                    <option>Minotaur</option>
-                    <option>Orc</option>
-                    <option>Satyr</option>
-                    <option>Sea Elf</option>
-                    <option>Shadar-kai</option>
-                    <option>Shifter</option>
-                    <option>Tabaxi</option>
-                    <option>Tortle</option>
-                    <option>Triton</option>
-                    <option>Water Genasi</option>
-                    <option>Yuan-ti</option>
-                    <option disabled={true}>---</option>
-                    <option>Kender</option>
-                    <option disabled={true}>---</option>
-                    <option>Astral Elf</option>
-                    <option>Autognome</option>
-                    <option>Giff</option>
-                    <option>Hadozee</option>
-                    <option>Plasmoid</option>
-                    <option>Thri-kreen</option>
-                    <option disabled={true}>---</option>
-                    <option>Owlin</option>
-                    <option disabled={true}>---</option>
-                    <option>Lineages</option>
-                    <option disabled={true}>---</option>
-                    <option>Leonin</option>
-                    <option disabled={true}>---</option>
-                    <option>Kalashtar</option>
-                    <option>Warforged</option>
-                    <option disabled={true}>---</option>
-                    <option>Verdan</option>
-                    <option disabled={true}>---</option>
-                    <option>Loxodon</option>
-                    <option>Simic Hybrid</option>
-                    <option disabled={true}>---</option>
-                    <option>Vedalken</option>
-                    <option disabled={true}>---</option>
-                    <option>Feral Tiefling</option>
-                    <option disabled={true}>---</option>
-                    <option>Locathah</option>
-                    <option disabled={true}>---</option>
-                    <option>Grung</option>
+                    {DnDRaces.map((race, key) => (
+                        (race.disabled || race.legacy) ? null : <option value={race.name} key={key}>{race.name} - {race.edition}</option>
+                    ))}
                 </select>
             </label><br/>
             <label>
                 Class:
-                <select name="race" value={dndClass} onChange={handleClassChange}>
+                <select name="class" value={dndClass} onChange={handleClassChange}>
                     <option>Any</option>
-                    <option>Barbarian</option>
-                    <option>Bard</option>
-                    <option>Cleric</option>
-                    <option>Druid</option>
-                    <option>Fighter</option>
-                    <option>Monk</option>
-                    <option>Paladin</option>
-                    <option>Ranger</option>
-                    <option>Rogue</option>
-                    <option>Sorcerer</option>
-                    <option>Warlock</option>
-                    <option>Wizard</option>
-                    <option disabled={true}>---</option>
-                    <option>Artificer</option>
-                    <option>Blood Hunter</option>
+                    {DnDClasses.map((dndClass, key) => (
+                        dndClass.disabled ? null : <option value={dndClass.name} key={key}>{dndClass.name} - {dndClass.edition}</option>
+                    ))}
                 </select>
             </label><br/>
             <label>
@@ -182,10 +122,23 @@ export const DnDCharacterForm: React.FC = () => {
                     <option>Evil</option>
                 </select>
             </label><br />
-            <button onClick={handleSubmit}>Generate Character!</button><br /><br /><hr /><br />
+            <div style={{"display": "inline-block"}}>
+                <DnDAbilityBox abilityName="strength" abilityScore={strength} OnChange={(score: number) => {setStrength(score); console.log(score);}} />
+                <DnDAbilityBox abilityName="dexterity" abilityScore={dexterity} OnChange={(score: number) => {setDexterity(score); console.log(score);}}  />
+                <DnDAbilityBox abilityName="constitution" abilityScore={constitution} OnChange={(score: number) => {setConstitution(score); console.log(score);}}  />
+                <DnDAbilityBox abilityName="intelligence" abilityScore={intelligence} OnChange={(score: number) => {setIntelligence(score); console.log(score);}}  />
+                <DnDAbilityBox abilityName="wisdom" abilityScore={wisdom} OnChange={(score: number) => {setWisdom(score); console.log(score);}} />
+                <DnDAbilityBox abilityName="charisma" abilityScore={charisma} OnChange={(score: number) => {setCharisma(score); console.log(score);}} />
+            </div>
+            <br /><br />
+            <div>
+                <button onClick={handleSubmit}>Generate Character!</button><br /><br />
+            </div><hr /><br />
             <label>Character:</label><br />
             <label><strong>Name</strong>: {dndName}</label><br /><br />
-            <label><strong>Backstory</strong>: {dndBackstory}</label><br />
+            <label><strong>Backstory</strong>: </label><br />
+            <textarea value={dndBackstory} >
+            </textarea>
             <br /><hr /><br />
             {avatarURL !== "" ? <img src={avatarURL} /> : null}<br />
         </form>

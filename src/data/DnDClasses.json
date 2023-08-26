@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Barbarian",
+        "edition": "Base"
+    },
+    {
+        "name": "Bard",
+        "edition": "Base"
+    },
+    {
+        "name": "Cleric",
+        "edition": "Base"
+    },
+    {
+        "name": "Druid",
+        "edition": "Base"
+    },
+    {
+        "name": "Fighter",
+        "edition": "Base"
+    },
+    {
+        "name": "Monk",
+        "edition": "Base"
+    },
+    {
+        "name": "Paladin",
+        "edition": "Base"
+    },
+    {
+        "name": "Ranger",
+        "edition": "Base"
+    },
+    {
+        "name": "Rogue",
+        "edition": "Base"
+    },
+    {
+        "name": "Sorcerer",
+        "edition": "Base"
+    },
+    {
+        "name": "Warlock",
+        "edition": "Base"
+    },
+    {
+        "name": "Wizard",
+        "edition": "Base"
+    },
+    {
+        "name": "Artificer",
+        "edition": "Tasha’s Cauldron of Everything"
+    },
+    {
+        "name": "Blood Hunter",
+        "edition": "Critical Role"
+    },
+    {
+        "name": "disabled",
+        "edition": "disabled",
+        "disabled": true
+    }
+]

@@ -1,0 +1,30 @@
+.abilityBox {
+  font-size:x-large;
+  border-style: double;
+  width: 15vw;
+  height: 15vw;
+  max-width: 5em;
+  max-height: 5em;
+  min-width: 3.5em;
+  min-height: 3.5em;
+  float: left;
+  margin: 0.1em;
+}
+
+.abilityBox button {
+  color: blue;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.abilityBox label {
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+
+.abilityScore {
+  size: 25;
+ 
+}
